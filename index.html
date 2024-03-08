@@ -8,10 +8,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <!-- Main -->
+    <main class="container">
+        <!-- Main header -->
+        <section class="header">
+            <div class="header-service">
+                <h1 class="header-title">Internet Service Provider</h1>
+                <button class="primary-button" id="export-button">
+                    <i class="bi bi-download"></i>
+                    Export
+                </button>
+            </div>
+            <div class="header-info">
+                <p class="header-description" id="company"></p>
+                <p class="header-description" id="city"></p>
+            </div>  
+            <div class="header-info">
+                <p class="header-description" id="phone"></p>
+                <p class="header-description" id="email"></p>
+            </div>          
+        </section>
+        <!-- Main content -->
+        <section class="content" id="export-content">      
+            <h2>List of plans</h2>
+            <table class="content-table" id="export-table">
+                <thead>      
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Modal -->
+    <dialog class="modal" id="dialog">
+        <!-- Modal header -->
+        <div class="modal-header">
+            <h3 class="modal-title">Export format</h3>
+            <button class="secondary-button" id="dialog-button">
+                <i class="bi bi-x-lg"></i>
+            </button> 
+        </div> 
+        <!-- Modal format -->  
+        <div class="modal-format">
+            <button class="primary-button" id="pdf-button">
+                <i class="bi bi-file-pdf"></i>
+                Pdf
+            </button>
+            <button class="primary-button" id="excel-button">
+                <i class="bi bi-file-excel"></i>
+                Excel
+            </button>
+        </div>
+    </dialog>
 </body>
 </html>

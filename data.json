@@ -1,0 +1,24 @@
+{
+    "Company": "Web Master",
+    "City": "Miami",
+    "Phone": "720-1230",
+    "Email": "webmaster@email.com",
+    "Plans": [
+        {
+            "Name": "300 Mega",
+            "Price": 20.00
+        },
+        {
+            "Name": "400 Mega",
+            "Price": 23.00
+        },
+        {
+            "Name": "500 Mega",
+            "Price": 26.00
+        },
+        {
+            "Name": "600 Mega",
+            "Price": 29.00
+        }
+    ]
+}
